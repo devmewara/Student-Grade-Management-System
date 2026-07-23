@@ -76,7 +76,7 @@ Open `index.html` in your browser to view a simple frontend demonstration of the
 
 ## Author
 
-**Dev**
+**Devendra Kumar Mewara**
 
 B.Tech Computer Science & Engineering
 
