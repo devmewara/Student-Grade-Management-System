@@ -1,0 +1,11 @@
+# Compiled executables
+gradecore
+*.exe
+*.out
+*.o
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store

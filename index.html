@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeCore - Student Result Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="hero">
+            <div>
+                <p class="eyebrow">C++ OOP Project</p>
+                <h1>Student Result / Grade Management System</h1>
+                <p class="intro">
+                    A project demonstrating classes, objects, encapsulation, abstraction,
+                    STL vectors, sorting algorithms and operator overloading.
+                </p>
+            </div>
+        </section>
+
+        <section class="workspace">
+            <aside class="panel student-panel">
+                <h2>Add Student</h2>
+                <form id="studentForm">
+                    <label>
+                        Roll Number
+                        <input id="rollNo" type="number" min="1" required>
+                    </label>
+                    <label>
+                        Name
+                        <input id="studentName" type="text" required>
+                    </label>
+                    <div class="marks-grid">
+                        <label>English <input id="markEng" type="number" min="0" max="100" required></label>
+                        <label>Math <input id="markMath" type="number" min="0" max="100" required></label>
+                        <label>Science <input id="markSci" type="number" min="0" max="100" required></label>
+                        <label>CS <input id="markCS" type="number" min="0" max="100" required></label>
+                        <label>GK <input id="markGK" type="number" min="0" max="100" required></label>
+                    </div>
+                    <button type="submit">Add Student</button>
+                </form>
+
+                <div id="message" class="message"></div>
+
+                <div class="topn-box">
+                    <label for="topN">Show Top</label>
+                    <input id="topN" type="number" min="1" value="3">
+                    <button id="showTopBtn" type="button">Go</button>
+                </div>
+                <div id="topResult" class="top-result"></div>
+            </aside>
+
+            <section class="panel report-panel">
+                <div class="report-head">
+                    <h2>Ranked Report</h2>
+                    <input id="searchBox" type="text" placeholder="Search by name or roll no.">
+                </div>
+                <table id="studentsTable">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Roll</th>
+                            <th>Name</th>
+                            <th>Total</th>
+                            <th>Average</th>
+                            <th>Grade</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentsBody"></tbody>
+                </table>
+                <p id="emptyState" class="empty-state">No students added yet — use the form to add one.</p>
+            </section>
+        </section>
+
+        <footer>
+            <p>GradeCore &middot; C++ OOP mini project &middot; This page mirrors the logic in Student.cpp / Course.cpp</p>
+        </footer>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
