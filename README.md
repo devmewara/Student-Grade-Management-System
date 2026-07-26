@@ -2,7 +2,7 @@
 
 A simple C++ Object-Oriented Programming (OOP) project that manages student results using classes, objects, vectors, sorting, and operator overloading.
 
-The project is named **GradeCore** and allows users to add students, calculate total marks, average, grades, display ranked reports, search students, remove records, and view the top-performing students.
+The project is named **Student Grade Management System** and allows users to add students, calculate total marks, average, grades, display ranked reports, search students, remove records, and view the top-performing students.
 
 ## Features
 
